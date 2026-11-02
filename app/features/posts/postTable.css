@@ -1,0 +1,32 @@
+.post-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.post-table th, .post-table  td {
+    text-align: left;
+    padding: 4px 8px;
+}
+
+.post-table table, .post-table th, .post-table td {
+    border: 2px solid var(--dark);
+}
+
+.post-table tr:nth-child(odd) {
+    background-color: var(--gray);
+}
+
+.post-table thead th, .post-table thead td {
+    background-color: var(--dark-gray);
+}
+
+.post-table button {
+    background: none !important;
+    border: none;
+    padding: 0 !important;
+    color: var(--dark);
+    text-decoration: underline;
+    cursor: pointer;
+    filter: none;
+}

@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { useAppSelector, useAppDispatch } from '~/hooks'; 
 import { type Post, deletePost, fetchPosts, selectAllPosts, selectPostsFilter, selectPostsError, selectPostsStatus } from './postsSlice';
 
+import './postTable.css';
 
 export function PostTable() {
     const dispatch = useAppDispatch();
@@ -34,10 +35,10 @@ export function PostTable() {
     ));
 
     if (postStatus === 'pending') {
-        return (<p>Loading...</p>);
+        return (<p>Cargando...</p>);
     } else if (postStatus === 'succeeded') {
         return (
-            <table>
+            <table className='post-table'>
                 <thead>
                     <tr>
                         <th>Nombre</th>

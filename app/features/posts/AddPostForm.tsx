@@ -37,7 +37,7 @@ export const AddPostForm = () => {
 
     return (
         <section>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} className='input-form'>
                 <input
                     type='text'
                     id='postName'
@@ -52,6 +52,7 @@ export const AddPostForm = () => {
                     name='postDescription'
                     placeholder='Descripción'
                     defaultValue=''
+                    rows={1}
                 />
                 <button>Crear</button>
             </form>

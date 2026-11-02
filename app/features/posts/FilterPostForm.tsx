@@ -22,7 +22,7 @@ export const FilterPostForm = () => {
 
     return (
         <section>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} className='input-form'>
                 <input
                     type='text'
                     id='postFilter'

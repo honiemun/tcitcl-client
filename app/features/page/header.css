@@ -1,0 +1,7 @@
+.header {
+    color: var(--dark);
+    border-bottom: 1px solid var(--dark-gray);
+    margin: 0 1em 1em 1em;
+
+    font-size: .8em;
+}

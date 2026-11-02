@@ -1,0 +1,10 @@
+.footer {
+    color: var(--gray);
+    display: flex;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.footer a {
+    color: var(--dark-gray);
+}
